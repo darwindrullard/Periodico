@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias RD</title>
+    <title>Happy Breaking News</title>
 
     <style>
         * {
@@ -21,8 +21,24 @@
             background-color: #1e3a8a;
             color: white;
             padding: 20px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            ;
         }
+
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+        header p {
+    color: white;
+    font-size: 25px;
+                  }
 
         nav {
             background-color: #111827;
@@ -110,8 +126,11 @@
 <body>
 
     <header>
-        <h1>Noticias RD</h1>
-        <p>Las noticias más importantes del momento</p>
+        <img src="imagenes/logo.png" alt="Logo">
+        <div>
+            <h1>Happy Breaking News</h1>
+            <p>Las noticias más importantes del momento</p>
+        </div>
     </header>
 
     <nav>
@@ -123,15 +142,13 @@
     </nav>
 
     <div class="container">
-
+       <a href="noticia.html" style="text-decoration: none; color: inherit;">
         <section class="principal">
-            <img src="https://picsum.photos/1200/400" alt="Noticia principal">
+            <img src="imagenes/noticia1.5.jpeg" alt="Noticia principal">
             <h2>Nueva tecnología revoluciona la educación en República Dominicana</h2>
-            <p>
-                Estudiantes de distintas provincias comienzan a utilizar plataformas digitales modernas para mejorar el aprendizaje y la comunicación escolar.
-            </p>
+            <p>Estudiantes de distintas provincias comienzan a utilizar plataformas digitales modernas para mejorar el aprendizaje y la comunicación escolar.</p>
         </section>
-
+         </a>
         <section class="noticias">
 
             <div class="card">
@@ -163,11 +180,8 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Noticias RD - Todos los derechos reservados</p>
+        <p>&copy; 2026 Happy Breaking News - Todos los derechos reservados</p>
     </footer>
 
-    <script>
-        console.log("Página cargada correctamente");
-    </script>
 </body>
 </html>
